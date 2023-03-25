@@ -1,0 +1,189 @@
+# list of satellite NodeURLs allowed for incoming access grants
+# allowed-satellites:
+# - https://www.storx.io/dcs-satellites
+
+# auth security token(s) to validate requests
+# auth-token: []
+
+# length of time satellite addresses are cached for
+# cache-expiration: 10m0s
+
+# server certificate file
+cert-file: ""
+
+# bucket to use for certificate storage with optional prefix (bucket/prefix)
+cert-magic.bucket: ""
+
+# email address to use when creating an ACME account
+cert-magic.email: ""
+
+# use CertMagic to handle TLS certificates
+cert-magic.enabled: false
+
+# path to the service account key file
+cert-magic.key-file: ""
+
+# use staging CA endpoints
+cert-magic.staging: false
+
+# Maximum Database Connection Lifetime, -1ns means the stdlib default
+# db.conn_max_lifetime: 30m0s
+
+# Maximum Amount of Idle Database connections, -1 means the stdlib default
+# db.max_idle_conns: 1
+
+# Maximum Amount of Open Database connections, -1 means the stdlib default
+# db.max_open_conns: 5
+
+# address to listen on for debug endpoints
+# debug.addr: 127.0.0.1:0
+
+# If set, a path to write a process trace SVG to
+# debug.trace-out: ""
+
+# public DRPC address to listen on
+drpc-listen-addr: :20002
+
+# public DRPC+TLS address to listen on
+drpc-listen-addr-tls: :20003
+
+# Gateway endpoint URL to return to clients
+# endpoint: ""
+
+# server key file
+key-file: ""
+
+# key/value store backend url
+# kv-backend: ""
+
+# public HTTP address to listen on
+listen-addr: :20000
+
+# public HTTPS address to listen on
+listen-addr-tls: :20001
+
+# if true, log function filename and line number
+# log.caller: false
+
+# if true, set logging to development mode
+# log.development: false
+
+# configures log encoding. can either be 'console', 'json', 'pretty', or 'gcloudlogging'.
+# log.encoding: ""
+
+# the minimum log level to log
+# log.level: info
+
+# can be stdout, stderr, or a filename
+# log.output: stderr
+
+# if true, log stack traces
+# log.stack: false
+
+# address(es) to send telemetry to (comma-separated)
+# metrics.addr: collectora.storx.io:9000
+
+# application name for telemetry identification. Ignored for certain applications.
+# metrics.app: authservice
+
+# application suffix. Ignored for certain applications.
+# metrics.app-suffix: -release
+
+# address(es) to send telemetry to (comma-separated)
+# metrics.event-addr: eventkitd.datasci.storx.io:9002
+
+# instance id prefix
+# metrics.instance-prefix: ""
+
+# how frequently to send up telemetry. Ignored for certain applications.
+# metrics.interval: 1m0s
+
+# create or update the database schema, and then continue service startup
+# migration: false
+
+# address that the node listens on
+node.address: :20004
+
+# access key for backup bucket
+node.backup.access-key-id: ""
+
+# bucket name where database backups are stored
+node.backup.bucket: ""
+
+# enable backups
+node.backup.enabled: false
+
+# backup bucket endpoint hostname, e.g. s3.amazonaws.com
+node.backup.endpoint: ""
+
+# how often full backups are run
+node.backup.interval: 1h0m0s
+
+# database backup object path prefix
+node.backup.prefix: ""
+
+# secret key for backup bucket
+node.backup.secret-access-key: ""
+
+# directory for certificates for mutual authentication
+node.certs-dir: ""
+
+# The active time between retries, typically not set
+# node.conflict-backoff.delay: 0s
+
+# The maximum total time to allow retries
+# node.conflict-backoff.max: 5m0s
+
+# The minimum time between retries
+# node.conflict-backoff.min: 100ms
+
+# allow start with empty storage
+node.first-start: false
+
+# unique identifier for the node
+node.id: ""
+
+# comma delimited list of cluster peers
+node.join: []
+
+# path where to store data
+node.path: ""
+
+# how often to replicate
+node.replication-interval: 30s
+
+# maximum entries returned in replication response
+node.replication-limit: 1000
+
+# maximum size that the incoming POST request body with access grant can be
+# post-size-limit: 4.0 KiB
+
+# comma separated list of public urls for the server TLS certificates (e.g. https://auth.example.com,https://auth.us1.example.com)
+public-url: []
+
+# time to delay server shutdown while returning 503s on the health endpoint
+# shutdown-delay: 45s
+
+# address for jaeger agent
+# tracing.agent-addr: agent.tracing.datasci.storx.io:5775
+
+# application name for tracing identification
+# tracing.app: authservice
+
+# application suffix
+# tracing.app-suffix: -release
+
+# buffer size for collector batch packet size
+# tracing.buffer-size: 0
+
+# whether tracing collector is enabled
+# tracing.enabled: true
+
+# how frequently to flush traces to tracing agent
+# tracing.interval: 0s
+
+# buffer size for collector queue size
+# tracing.queue-size: 0
+
+# how frequent to sample traces
+# tracing.sample: 0
